@@ -146,11 +146,14 @@ public class SWingCalculator extends JFrame {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        javax.swing.SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                new SWingCalculator();
-            }
+//        javax.swing.SwingUtilities.invokeLater(new Runnable() {
+//            @Override
+//            public void run() {
+//                new SWingCalculator();
+//            }
+//        });
+        javax.swing.SwingUtilities.invokeLater(() -> {
+            new SWingCalculator();
         });
     }
 
